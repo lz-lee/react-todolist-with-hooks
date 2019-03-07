@@ -1,0 +1,21 @@
+.wrapper{
+  width: 540px;
+  margin: 200px auto;
+  padding: 20px 0;
+  box-shadow: 0px 20px 20px 2px #e8e8e8 ,0 0 4px 0 rgba(0, 0, 0, .2);
+  text-align: center;
+}
+.item{
+  display: flex;
+  /* justify-content: space-around; */
+  width: 100%;
+  padding: 10px 30px;
+  box-sizing: border-box;
+}
+.itemInner{
+  flex:1;
+  display: flex;
+}
+.checkTodo{
+  margin-right: 10px;
+}
