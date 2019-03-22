@@ -10,7 +10,7 @@ import { CleanEffectOderWrapper } from './Demo/cleanEffect';
 
 import * as serviceWorker from './serviceWorker';
 
-ReactDOM.render(<CountWithReducer />, document.getElementById('root'));
+ReactDOM.render(<CleanEffectOderWrapper />, document.getElementById('root'));
 
 // If you want your app to work offline and load faster, you can change
 // unregister() to register() below. Note this comes with some pitfalls.
