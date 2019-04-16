@@ -6,7 +6,7 @@
 
 - 使用 useRef 可以规避捕获值，使用最新的值。
 
-- effects 清除流程：由于effects执行会在每次渲染之后，当 `props` 的 `{count: 10}` 改变成 {count: 20} 时， effects的执行顺序：
+- effects 清除流程：由于effects执行会在每次渲染之后，当 `props` 的 `{count: 10}` 改变成 `{count: 20}` 时， effects的执行顺序：
   - 渲染 `{count: 20}` 的UI；
 
   - 浏览器绘制UI
@@ -24,7 +24,7 @@
 
   - `useLayoutEffect`: 在 DOM 更新后会立即运行，如果需要进行 dom 的操作（获取样式等），通过更新状态进行 DOM 改变或触发同步重新渲染。与`componentDidMount`和`componentDidUpdate`的工作方式相同。
 
-  - `useLayoutEffect`的清除 > `useLayoutEffect`的下一次执行 > `useEffect` 的清除 > `useEffect` 的下一次执行， 在组件卸载时， ``useEffect`的清除在`useLayoutEffect`的清除之前。
+  - `useLayoutEffect`的清除 > `useLayoutEffect`的下一次执行 > `useEffect` 的清除 > `useEffect` 的下一次执行， 在组件卸载时， `useEffect`的清除在`useLayoutEffect`的清除之前。
 
     ```jsx
     render UI 10
